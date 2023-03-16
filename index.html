@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+	
+	<title>Давай играть!</title>
+</head>
+<body>
+	<header id="top-header">
+		<div class="logo" id="top-logo">
+			<div class="card">
+				<img src="img/title_photo.jpg" class="card-img">
+				<div class="card-img-overlay text-white">
+					<div class="card-body" id="block-for-text">
+						<span class="title-text" id="title-line-1">Игра</span>
+						<br>
+						<span class="title-text" id="title-line-2">В города России</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="end-scroll"></div>
+	<div id="top-point"></div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-warning" id="top-navbar">
+		<a href="index.html" class="navbar-brand">
+			<img src="img/brand.png" alt="img" width="30" height="30">
+			<span>Города</span>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarContent">
+			<ul class="navbar-nav mr-auto ml-sm-5">
+				<li class="nav-item active">
+					<a href="index.html" class="btn btn-outline-dark mr-sm-2 active">Давай играть</a>
+				</li>
+				<li class="nav-item">
+					<a href="how_game/index.html" class="btn btn-outline-dark mr-sm-2">Как играть</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div id="nav-br"></div>
+	<br>
+	<div class="main-block">
+		<div class="big-container">
+			<div class="card" id="game-panel">
+				<div class="card-header" id="header-panel">
+					<h3 class="text-center">Игра "В города России"</h3>
+				</div>
+				<div class="card-body" id="body-panel">
+					<div id="message-block">
+						<div class="message">
+							<div class="message-by-bot-block">
+								<div class="message-by-bot">
+									<span>
+										Это игра "В города России"
+										Мой ход первый)
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-footer" id="footer-panel">
+					<div class="input-group">
+						<input type="text" class="form-control" id="input-city" placeholder="Введите город:">
+						<div class="input-group-append">
+							<button class="btn btn-primary" id="send-city">&#10004;</button>
+						</div>
+					</div>
+					<div id="end-scroll"></div>
+					<a href="index.html" class="btn btn-primary btn-block" id="game-again">С играть ещё раз!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="up-arrow btn">&uArr;</button>
+
+	<script src="js/jquery/jquery.min.js"></script>
+	<script src="js/popper/popper.min.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js" async></script>
+	<script src="js/cities_list.js"></script>
+	<script src="js/random.js"></script>
+	<script src="js/script.js" async></script>
+</body>
+</html>

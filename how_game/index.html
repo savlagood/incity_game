@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="../css/basic.css">
+	<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+
+	<title>Как играть?</title>
+</head>
+<body>
+	<header id="top-header">
+		<div class="logo" id="top-logo">
+			<div class="card">
+				<img src="../img/title_photo.jpg" class="card-img">
+				<div class="card-img-overlay text-white">
+					<div class="card-body" id="block-for-text">
+						<span class="title-text" id="title-line-1">Игра</span>
+						<br>
+						<span class="title-text" id="title-line-2">В города России</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="end-scroll"></div>
+	<div id="top-point"></div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-warning" id="top-navbar">
+		<a href="../index.html" class="navbar-brand">
+			<img src="../img/brand.png" alt="img" width="30" height="30">
+			<span>Города</span>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarContent">
+			<ul class="navbar-nav mr-auto ml-sm-5">
+				<li class="nav-item active">
+					<a href="../index.html" class="btn btn-outline-dark mr-sm-2">Давай играть</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="btn btn-outline-dark mr-sm-2 active">Как играть</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div id="nav-br"></div>
+	<br>
+	<div class="main-block">
+		<div class="big-container">
+			<div class="rule">
+				<div class="card border-info mb-4">
+					<div class="card-header text-white bg-info">
+						<h3 class="text-center">Описание</h3>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Игра "В города России"</h5>
+						<p class="card-text">Игра "В города России" - это игра в которой игрок играет в города России с ботом. Игрок должен назвать российский город который начинается на последнюю букву. А бот , в свою очередь, должен назвать российский город который начинается на последнюю букву города игрока. Цель игры - дождаться того момента, когда бот не сможет назвать города. Если бот не называет города, то игрок победил!</p>
+					</div>
+				</div>
+				<div class="card border-info mb-4">
+					<div class="card-header text-white bg-info">
+						<h3 class="text-center">Правила</h3>
+					</div>
+					<div class="card-body">
+						<!--h5 class="card-title"></h5-->
+						<ol>
+							<li>Вводить только города России</li>
+							<li>Города на буквы: Ь, Ъ, Й - называть нельзя!</li>
+							<li>Писать без ошибок. Иначе бот не распознает город!</li>
+							<li>Если город заканчивается на букву - И, то вводить город нужно такой, что бы он начинался на букву - И.</li>
+						</ol>
+					</div>
+				</div>
+				<div class="card border-info mb-4">
+					<div class="card-header text-white bg-info">
+						<h3 class="text-center">Фразы</h3>
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Фразы бота:</h5>
+						<ol>
+							<li>[Пустое поле это не город!] - Вы не ввели город.</li>
+							<li>[Я такой город не знаю! Посмотри может ты его неправильно написал.] - Вы ввели неправильный город или город с ошибкой</li>
+							<li>[Такой город уже был!] - Вы ввели город который уже был.</li>
+							<li>[Мой город оканчивается на - {Буква}, а твой город начинается на {Буква}. Буквы не совпадают!] - Буквы вашего города и города бота не совпадают.</li>
+							<li>[Упс. Я не знаю города на букву - {Буква}. Похоже, что я проиграл. Поздравляю с победой!] - Вы выиграли</li>
+							<li>[И все-таки я выиграл!] - Вы проиграли.</li>
+							<li>[Если хочешь, то можешь поиграть ещё раз. Ну, а если нет, то поздравляю с победой!] - Вы можете переиграть</li>
+							<li>[Город] - Новый город</li>
+						</ol>
+						<h5 class="card-title">Возможные варианты ввода в поле:</h5>
+						<ol>
+							<li>[Город] - Новый город.</li>
+							<li>[Я сдаюсь] - Если вы незнаете больше города, то введите эту фразу.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="up-arrow btn">&uArr;</button>
+
+	<script src="../js/jquery/jquery.min.js"></script>
+	<script src="../js/popper/popper.min.js"></script>
+	<script src="../js/bootstrap/bootstrap.min.js" async></script>
+	<script src="../js/cities_list.js"></script>
+	<script src="../js/random.js"></script>
+	<script src="../js/script.js" async></script>
+</body>
+</html>
